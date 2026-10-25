@@ -34,3 +34,27 @@ Record actual test results and screenshots after running the app. No tests have 
 
 ## GitHub submission
 Create a repository, commit these files to `main`, and add later implementation, tests, screenshots, and documentation. Export the final `main` branch as ZIP for Canvas.
+
+
+## Milestone 2 update: demo login and QR scanner
+
+This update adds a simulated login page and a camera-based QR scanner tab. Existing catalog, borrowing, returns and reservations remain.
+
+### Required setup
+
+1. Open the `SMLMS_Starter` folder in VS Code.
+2. Open a **Command Prompt (cmd)** terminal in VS Code.
+3. Run `npm install`.
+4. Run `npx expo install expo-camera` (selects the version compatible with your Expo SDK).
+5. Run `npx expo start -c` and open the project in a compatible Expo Go app.
+6. Allow camera access on your phone.
+
+The QR scanner matches codes containing a demo book ID (`1` through `5`) or an exact book title. Use the 'Demo: open Clean Code' button if you do not have a printed QR code. Test actual camera scanning on a physical device.
+
+### Important limitations
+
+- Login accepts any valid-looking email and any non-empty password; **not real authentication**. Credentials are not saved.
+- No Firebase, Node.js API, account database, push notifications, or persistence.
+- Data resets when the app restarts.
+- React Native / Expo is cross-platform, but this version has **not been verified on iOS**.
+- Do not claim camera scanning is tested until you have tested it on your phone.
